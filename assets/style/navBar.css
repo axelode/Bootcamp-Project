@@ -1,0 +1,52 @@
+/* navbar styling */
+nav, .nav-left, .nav-left ul {
+    display: flex;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 48px;
+    background-color: #FFFFFF;
+    z-index: 10;
+}
+
+.nav-left {
+    align-items: center;
+    gap: 72px;
+}
+
+.nav-left ul {
+    gap: 36px;
+    list-style: none;
+}
+
+.nav-left ul li, .button-contact-me {
+    cursor: pointer;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-left ul li a:hover {
+    font-weight: bold;
+}
+
+.nav-right {
+   margin: auto 0;
+}
+
+.button-contact-me {
+    color: white;
+    background-color: black;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}

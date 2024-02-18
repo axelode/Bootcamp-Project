@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/contactMe.css">
+    <link rel="stylesheet" href="./assets/style/navBar.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav>
+        <div class="nav-left">
+            <img
+                src="./assets/icons/brandred.png"
+                alt="logo"
+                width="50px"
+            />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="myProject.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="contactMe.html">
+                <button class="button-contact-me">Contact Me</button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- main page -->
+    <div class="container">
+        <div class="box">
+            <h1>GET IN TOUCH</h1>
+            
+            <div class="input-name">
+                <label>Name</label>
+                <input type="text" id="name">
+            </div>
+
+            <div class="input-email">
+                <label>Email</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="input-phone-number">
+                <label>Phone Number</label>
+                <input type="number" id="phone-number">
+            </div>
+
+            <div class="select-subject">
+                <label>Subject</label>
+                <select id="subject">
+                    <option value="" hidden>Select Subject</option>
+                    <option value="Let's Collaborate With Me">Collaborations</option>
+                    <option value="Let's Work Together With Me">Working Together</option>
+                    <option value="Open Recruitment">Recruitment</option>
+                </select>
+            </div>
+
+            <div class="input-message">
+                <label>Your Message</label>
+                <textarea id="message"></textarea>
+            </div>
+
+            <div class="box-submit">
+                <button class="button-submit" onclick="getData()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/contactMe.js"></script>
+</body>
+</html>
