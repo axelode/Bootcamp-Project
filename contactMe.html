@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/contactMe.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav>
+        <div class="nav-left">
+            <img
+                src="https://dumbways.id/assets/images/brandred.png"
+                alt="logo"
+                width="50px"
+            />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>My Project</li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="contactMe.html">
+                <button class="button-contact-me">Contact Me</button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- main page -->
+    <div class="container">
+        <div class="box">
+            <h1>GET IN TOUCH</h1>
+            
+            <div class="input-name">
+                <p>Name</p>
+                <input type="text" id="name">
+            </div>
+
+            <div class="input-email">
+                <p>Email</p>
+                <input type="email" id="email">
+            </div>
+
+            <div class="input-phone-number">
+                <p>Phone Number</p>
+                <input type="number" id="phone-number">
+            </div>
+
+            <div class="select-subject">
+                <p>Subject</p>
+                <select id="subject">
+                    <option value="" hidden>Select Subject</option>
+                    <option value="Let's Collaborate With Me">Collaborations</option>
+                    <option value="Let's Work Together With Me">Working Together</option>
+                    <option value="Open Recruitment">Recruitment</option>
+                </select>
+            </div>
+
+            <div class="input-message">
+                <p>Your Message</p>
+                <textarea id="message"></textarea>
+            </div>
+
+            <div class="box-submit">
+                <button class="button-submit" onclick="getData()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/contactMe.js"></script>
+</body>
+</html>
