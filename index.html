@@ -16,18 +16,44 @@
                 alt="logo"
                 width="50px"
             />
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="myProject.html">My Project</a></li>
-            </ul>
+            <div class="default-btn">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="myProject.html">My Project</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="nav-right">
+        <div class="nav-right default-btn">
             <a href="contactMe.html">
-                <button class="button-contact-me">Contact Me</button>
+                <button class="button-contact-me none">Contact Me</button>
             </a>
         </div>
+
+        <div class="nav-right hamburger-bar" onclick="handleHamburger()">
+            <img
+                src="./assets/icons/menu.svg"
+                alt=""
+                id="hamburger-icon"
+                width="30px"
+            >
+            <img
+                src="./assets/icons/x.svg"
+                alt=""
+                id="x-icon"
+                width="30px"
+            >
+        </div>
     </nav>
+
+    <!-- hamburger popup -->
+    <div id="hamburger-popup" class="hamburger-popup">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myProject.html">My Project</a></li>
+            <li><a href="contactMe.html">Contact Me</a></li>
+        </ul>
+    </div>
 
     <!-- main page -->
     <div class="container">
@@ -91,19 +117,24 @@
             </div>
 
             <div class="box-right">
-                <div class="image">
-                    <img
-                        src="https://lontar-tirtayasa.desa.id/wp-content/uploads/2023/07/vicky-hladynets-C8Ta0gwPbQg-unsplash.jpg"
-                        alt="profile"
-                        width="400px"
-                    />
-                </div>
-                <div class="name-role">
-                    <h1>Jhon Doe</h1>
-                    <p>Fullstack Developer</p>
+                <div class="right-container">
+                    <div class="image">
+                        <img
+                            src="https://lontar-tirtayasa.desa.id/wp-content/uploads/2023/07/vicky-hladynets-C8Ta0gwPbQg-unsplash.jpg"
+                            alt="profile"
+                            width="100%"
+                        />
+                    </div>
+                    <div class="name-role">
+                        <h1>Jhon Doe</h1>
+                        <p>Fullstack Developer</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="./assets/js/navbar.js"></script>
+
   </body>
 </html>

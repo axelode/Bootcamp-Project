@@ -17,18 +17,44 @@
                 alt="logo"
                 width="50px"
             />
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="myProject.html">My Project</a></li>
-            </ul>
+            <div class="default-btn">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="myProject.html">My Project</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="nav-right">
+        <div class="nav-right default-btn">
             <a href="contactMe.html">
-                <button class="button-contact-me">Contact Me</button>
+                <button class="button-contact-me none">Contact Me</button>
             </a>
         </div>
+
+        <div class="nav-right hamburger-bar" onclick="handleHamburger()">
+            <img
+                src="./assets/icons/menu.svg"
+                alt=""
+                id="hamburger-icon"
+                width="30px"
+            >
+            <img
+                src="./assets/icons/x.svg"
+                alt=""
+                id="x-icon"
+                width="30px"
+            >
+        </div>
     </nav>
+
+    <!-- hamburger popup -->
+    <div id="hamburger-popup" class="hamburger-popup">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myProject.html">My Project</a></li>
+            <li><a href="contactMe.html">Contact Me</a></li>
+        </ul>
+    </div>
 
     <!-- main page -->
     <div id="main-page">
@@ -166,6 +192,7 @@
         </div>
     </div>
 
+    <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/myProject.js"></script>
 
 </body>

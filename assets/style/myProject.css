@@ -329,3 +329,11 @@ body {
    background-color: transparent;
    cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .blog-box {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 32px;
+    }
+}
