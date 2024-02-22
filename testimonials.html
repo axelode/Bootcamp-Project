@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/navBar.css">
+    <link rel="stylesheet" href="./assets/style/testimonials.css">
+    <title>Testimonials</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav>
+        <div class="nav-left">
+            <img
+                src="./assets/icons/brandred.png"
+                alt="logo"
+                width="50px"
+            />
+            <div class="default-btn">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="myProject.html">Project</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-right default-btn">
+            <a href="contactMe.html">
+                <button class="button-contact-me none">Contact</button>
+            </a>
+        </div>
+
+        <div class="nav-right hamburger-bar" onclick="handleHamburger()">
+            <img
+                src="./assets/icons/menu.svg"
+                alt=""
+                id="hamburger-icon"
+                width="30px"
+            >
+            <img
+                src="./assets/icons/x.svg"
+                alt=""
+                id="x-icon"
+                width="30px"
+            >
+        </div>
+    </nav>
+
+    <!-- hamburger popup -->
+    <div id="hamburger-popup" class="hamburger-popup">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myProject.html">Project</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contactMe.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- main page -->
+    <div class="container">
+        <h1>My Testimonials</h1>
+        <div id="testimoni-box" class="box">
+            <!-- testimoni box -->
+        </div>
+    </div>
+
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/testimonials.js"></script>
+
+</body>
+</html>
