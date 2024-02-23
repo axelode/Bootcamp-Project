@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/myProject.css">
+    <link rel="stylesheet" href="./assets/style/navBar.css">
+    <title>My Project</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav id="nav"></nav>
+
+    <!-- hamburger popup -->
+    <div id="hamburger-popup" class="hamburger-popup"></div>
+
+    <!-- main page -->
+    <div id="main-page">
+        <!-- add blog page -->
+        <div class="container">
+            <div class="box">
+                <h1>ADD MY PROJECT</h1>
+                
+                <div class="input-project-name">
+                    <label>Project Name</label>
+                    <input type="text" id="project-name">
+                </div>
+
+                <div class="input-date">
+                    <div class="input-start-date">
+                        <label>Start Date</label>
+                        <input type="date" id="start-date">
+                    </div>
+                    <div class="input-end-date">
+                        <label>End Date</label>
+                        <input type="date" id="end-date">
+                    </div>
+                </div>
+
+                <div class="input-description">
+                    <label>Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+
+                <div class="select-technologies">
+                    <label>Technologies</label>
+                    <div class="technologies">
+                        <div class="technologies-left">
+                            <div class="js">
+                                <input type="checkbox" id="js">
+                                <label>JavaScript</label>
+                            </div>
+                            <div class="next">
+                                <input type="checkbox" id="next">
+                                <label>Next Js</label>
+                            </div>
+                        </div>
+                        <div class="technologies-right">
+                            <div class="react">
+                                <input type="checkbox" id="react">
+                                <label>React Js</label>
+                            </div>
+                            <div class="node">
+                                <input type="checkbox" id="node">
+                                <label>Node Js</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="upload-image">
+                    <label>Upload Image</label>
+                    <div class="choose-file">
+                        <input
+                            type="file"
+                            id="image"
+                            class="choose-image"
+                            accept="image/*"
+                        />
+                        <label for="image" class="label-image">Choose File</label>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15px"><path d="M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"/></svg>
+                    </div>
+                </div>
+
+                <div class="box-submit">
+                    <button class="button-submit" onclick="addBlog()">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- blog page -->
+        <div class="blog-container">
+            <h1 class="page-title">MY PROJECT</h1>
+            <div id="blog-box" class="blog-box">
+                <!-- daftar blog -->
+            </div>
+        </div>
+    </div>
+
+    <!-- popup page -->
+    <div id="popup-page" class="popup-page">
+        <!-- popup content -->
+        <div class="popup-container">
+            <h1>Dumbways Web App 2024</h1>
+            <div class="box-head">
+                <div class="box-left">
+                    <img src="https://technext.github.io/hostza/img/about/2.png" alt=""  width="850px">
+                </div>
+                <div class="box-right">
+                    <div class="time-box">
+                        <h1>Durations</h1>
+                        <div class="calender-box">
+                            <img src="./assets/icons/calender.svg" alt="" width="20px">
+                            <span>1 Jan 2024 - 1 Feb 2024 </span>
+                        </div>
+                        
+                        <div class="clock-box">
+                            <img src="./assets/icons/clock.svg" alt="" width="20px">
+                            <span>1 month</span>
+                        </div>
+                    </div>
+                    <div class="tech-box">
+                        <h1>Technologies</h1>
+                        <div id="tech-box-icon" class="tech-box-icon">
+                            <div class="icon-popup">
+                                <img src="./assets/icons/js.svg" alt="" width="20px">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="icon-popup">
+                                <img src="./assets/icons/react.svg" alt="" width="20px">
+                                <span>React Js</span>
+                            </div>
+                            <div class="icon-popup">
+                                <img src="./assets/icons/node.svg" alt="" width="20px">
+                                <span>Node Js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-body">
+                <p>
+                    App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download.
+                </p>
+
+                <div class="close-button-box">
+                    <button onclick="closePopUp()" class="close-button"><img src="./assets/icons/close.svg" alt="" width="50px"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/myProject.js"></script>
+
+</body>
+</html>
