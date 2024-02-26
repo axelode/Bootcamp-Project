@@ -176,6 +176,7 @@ body {
     display: grid;
     place-items: center;
     padding: 18px;
+    background-color: #e3e7eb;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;

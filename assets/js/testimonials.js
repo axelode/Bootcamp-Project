@@ -6,8 +6,7 @@ class Testimoni {
     }
 
     render() {
-        const testimoniBox = document.getElementById("testimoni-box")
-        testimoniBox.innerHTML += `
+        document.getElementById("testimoni-box").innerHTML += `
             <div class="card">
                 <div class="image">
                     <img
@@ -34,6 +33,8 @@ const testimoniData = [
     new Testimoni("Dane", "11/10 abangkuhh!", "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=600"),
 
     new Testimoni("Bella", "Good job!", "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600"),
+
+    new Testimoni("Joe", "Menyala abangkuhh!", "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=600"),
 
 ]
 

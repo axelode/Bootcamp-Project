@@ -36,6 +36,7 @@ body {
     display: grid;
     place-items: center;
     padding: 32px;
+    background-color: #FFFFFF;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
