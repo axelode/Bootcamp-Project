@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/navBar.css">
+    <link rel="stylesheet" href="./assets/style/testimonials.css">
+    <title>Testimonials</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav id="nav"></nav>
+
+    <!-- hamburger popup -->
+    <div id="hamburger-popup" class="hamburger-popup"></div>
+
+    <!-- main page -->
+    <div class="container">
+        <h1>My Testimonials</h1>
+        <h3>Rating by Star</h3>
+
+        <div class="btn-sort">
+            <button onclick="showAll()">
+                <label>All</label>
+            </button>
+
+            <button onclick="sortData(1)">
+                <label>1</label>
+                <img src="./assets/icons/star.svg" width="24px" />
+            </button>
+
+            <button onclick="sortData(2)">
+                <label>2</label>
+                <img src="./assets/icons/star.svg" width="24px" />
+            </button>
+
+            <button onclick="sortData(3)">
+                <label>3</label>
+                <img src="./assets/icons/star.svg" width="24px" />
+            </button>
+
+            <button onclick="sortData(4)">
+                <label>4</label>
+                <img src="./assets/icons/star.svg" width="24px" />
+            </button>
+
+            <button onclick="sortData(5)">
+                <label>5</label>
+                <img src="./assets/icons/star.svg" width="24px" />
+            </button>
+        </div>
+
+        <div id="testimoni-box" class="box">
+            <!-- testimoni box -->
+        </div>
+    </div>
+
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/testimonials.js"></script>
+
+</body>
+</html>
