@@ -1,0 +1,9 @@
+@media screen and (max-width: 600px) {
+    .responsive-card {
+        width: 700px;
+    }
+}
+
+.responsive-card {
+    background-color: aqua;
+}

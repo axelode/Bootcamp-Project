@@ -1,0 +1,390 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* main page styling */
+.container {
+    padding-top: 96px;
+    padding-bottom: 36px;
+    background-color: #e3e7eb;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.box h1 {
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+.input-project-name, .input-start-date, .input-end-date, .input-description, .select-technologies, .upload-image {
+    display: grid;
+}
+
+.input-project-name label, .input-start-date label, .input-end-date label, .input-description label, .select-technologies label, .upload-image label {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.input-project-name input, .input-start-date input, .input-end-date input, .input-description textarea {
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
+}
+
+.input-project-name input {
+    width: 350px;
+    height: 35px;
+}
+
+.input-date {
+    width: 350px;
+    display: flex;
+    gap: 14px;
+}
+
+.input-start-date input, .input-end-date input {
+    width: 169px;
+    height: 35px;
+}
+
+.input-description textarea {
+    width: 350px;
+    height: 150px;
+    resize: none;
+}
+
+.select-technologies {
+    width: 350px;
+}
+
+.technologies {
+    display: flex;
+    gap: 42px;
+    padding-top: 8px;
+}
+
+.technologies-left {
+    display: grid;
+    gap: 12px;
+}
+
+.technologies-right {
+    display: grid;
+    gap: 12px;
+}
+
+.choose-file {
+    width: 350px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(195, 195, 195);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.choose-image {
+    position: relative;
+    margin: auto 8px;
+}
+  
+.label-image {
+    position: absolute;
+    width: 95px;
+    height: 35px;
+    padding: 5px;
+    background-color: silver;
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+.choose-file svg {
+    margin-right: 8px;
+}
+
+.box-submit {
+    width: 350px;
+    display: flex;
+    justify-content: end;
+}
+
+.button-submit {
+    width: 85px;
+    padding: 6px 12px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+}
+
+/* blog page styling */
+.blog-container {
+    width: 100%;
+    padding: 24px;
+    background-color: #FFFFFF;
+}
+
+.page-title {
+    font-size: 26px;
+    text-align: center;
+    margin: 24px 0;
+}
+
+.blog-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-content: center;
+    gap: 8px;
+}
+
+.card {
+    width: 425px;
+    display: grid;
+    place-items: center;
+    padding: 18px;
+    background-color: #e3e7eb;;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .3);
+}
+
+.blog-image {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.blog-title {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.blog-title h1 {
+    font-size: 24px;
+}
+
+.blog-description {
+    width: 100%;
+    text-align: start;
+    margin: 24px 0;
+}
+
+.technologies-icon {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    justify-content: start;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.button button {
+    width: 180px;
+    height: 32px;
+    border: none;
+    color: #FFFFFF;
+    background-color: black;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+}
+
+/* popup styling */
+.popup-page {
+    width: 100%;
+    display: none;
+    background-color: #e3e7eb;
+}
+
+.popup-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 96px 96px 32px 96px;
+}
+
+.popup-container h1 {
+    margin-bottom: 42px;
+}
+
+.box-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+
+.box-left {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.box-right {
+    width: 300px;
+    gap:  2px;
+}
+
+.time-box {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.time-box h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.calender-box, .clock-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tech-box {
+    display: grid;
+    gap: 12px;
+}
+
+.tech-box h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.tech-box-icon {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 14px;
+}
+
+.icon-popup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.box-body p {
+    text-align: justify;
+}
+
+.close-button-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+}
+
+.close-button {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .blog-box {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 16px;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+    .popup-container {
+        padding: 96px 3% 24px 3%;
+        gap: 16px;
+    }
+
+    .popup-container h1 {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+
+    .box-head {
+        display: grid;
+        gap: 16px;
+        margin: 0;
+    }
+
+    .box-left {
+        width: 100%;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+}
+
+    .box-right {
+        display: grid;
+        gap: 12px;
+    }
+
+    .time-box h1 {
+        font-size: 1.3rem;
+    }
+    
+    .tech-box h1 {
+        font-size: 1.3rem;
+    }
+
+    .time-box {
+        margin: 0;
+    }
+
+    .tech-box {
+        margin: 0;
+    }
+}
