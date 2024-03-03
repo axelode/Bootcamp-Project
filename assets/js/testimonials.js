@@ -119,19 +119,19 @@ const showAllData = async () => {
         } else {
             for(let i = 0; i < response.data.length; i++) {
                 dataHtml += `
-                    <div class="card">
-                        <div class="image">
+                    <div class="card mb-4 shadow p-3" style="width: 400px;">
+                        <div class="mb-3 overflow-hidden rounded" style="height: 200px;">
                             <img
                                 src="${response.data[i].image}"
-                                alt=""
-                                width="100%"
+                                class="card-img-top"
+                                alt="Poster"
                             />
                         </div>
                         <p>${response.data[i].comment}</p>
-                        <div class="name-bar">
-                            <h4>~ ${response.data[i].author}</h4>
+                        <div class="d-flex justify-content-end">
+                            <h6 class="fw-bold">~ ${response.data[i].author}</h6>
                         </div>
-                        <div class="data-star">
+                        <div class="d-flex justify-content-end gap-2">
                             <label>${response.data[i].rate}</label>
                             <img src="./assets/icons/star-black.svg" width="18px" />
                         </div>
@@ -165,21 +165,22 @@ const sortData = async (rating) => {
         } else {
             for(let i = 0; i < dataFiltered.length; i++) {
                 dataHtml += `
-                    <div class="card">
-                        <div class="image">
+                    <div class="card p-3 shadow" style="width: 400px;">
+                        <div class="mb-3 overflow-hidden rounded" style="height: 200px;">
                             <img
                                 src="${dataFiltered[i].image}"
-                                alt=""
+                                class="card-img-top"
+                                alt="Poster"
                                 width="100%"
                             />
                         </div>
                         <p>${dataFiltered[i].comment}</p>
-                        <div class="name-bar">
-                            <h4>~ ${dataFiltered[i].author}</h4>
-                        </div>
-                        <div class="data-star">
-                            <label>${dataFiltered[i].rate}</label>
-                            <img src="./assets/icons/star-black.svg" width="18px" />
+                        <div class="d-flex flex-column align-items-end">
+                            <h6 class="fw-bold">~ ${dataFiltered[i].author}</h6>
+                            <div class="d-flex gap-2">
+                                <label>${dataFiltered[i].rate}</label>
+                                <img src="./assets/icons/star-black.svg" width="18px" />
+                            </div>
                         </div>
                     </div>
                 `
