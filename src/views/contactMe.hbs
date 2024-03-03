@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Contact Me</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light px-4 fixed-top shadow"></nav>
+
+    <!-- main page -->
+    <div class="container-fluid mt-5 py-5 px-4" style="background-color: #e3e7eb;">
+        <h3 class="text-center mb-5 fw-bold">GET IN TOUCH</h3>
+        <form class="m-auto px-xl-5" style="width: 100%;">
+            <div class="mb-3">
+                <label for="name" class="form-label fw-bold">Name</label>
+                <input type="text" id="name" class="form-control shadow">
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email</label>
+                <input type="email" id="email" class="form-control shadow">
+            </div>
+
+            <div class="mb-3">
+                <label for="phone-number" class="form-label fw-bold">Phone Number</label>
+                <input type="text" id="phone-number" class="form-control shadow">
+            </div>
+
+            <div class="mb-3">
+                <label for="subject" class="form-label fw-bold">Subject</label>
+                <select id="subject" class="form-select shadow" aria-label="Default select example">
+                    <option selected>Select Subject</option>
+                    <option value="Let's Collaborate With Me">Collaborations</option>
+                    <option value="Let's Work Together With Me">Working Together</option>
+                    <option value="We Are Hiring!">Recruitment</option>
+                  </select>
+            </div>
+            
+            <div class="mb-3">
+                <label for="message" class="form-label fw-bold">Message</label>
+                <textarea id="message" class="form-control shadow" style="height: 150px; resize: none;"></textarea>
+            </div>
+                
+            <div class="d-flex justify-content-end mt-5">
+                <button class="btn btn-dark rounded-pill" type="button" onclick="getMessage()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/contactMe.js"></script>
+</body>
+</html>
