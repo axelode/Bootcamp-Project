@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Testimonials</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light px-3 fixed-top shadow"></nav>
+
+    <!-- main page -->
+    <div class="container-fluid mt-5 py-5" style="background-color: #e3e7eb;">
+        <div class="d-flex flex-column justify-content-center">
+            <h3 class="text-center mb-4 mb-xl-5 fw-bold">MY TESTIMONIALS</h3>
+            <h6 class="text-center mb-3 fw-bold">Rating by Star</h6>
+
+            <div class="d-flex justify-content-center gap-1 gap-xl-2 mb-4 mb-xl-5">
+                <button class="btn btn-dark" onclick="showAllData()">
+                    <label>All</label>
+                </button>
+
+                <button class="btn btn-dark d-flex align-items-center gap-1 gap-xl-2" onclick="sortData(1)">
+                    <label>1</label>
+                    <img src="/assets/icons/star.svg" width="20px" />
+                </button>
+
+                <button class="btn btn-dark d-flex align-items-center gap-1 gap-xl-2" onclick="sortData(2)">
+                    <label>2</label>
+                    <img src="/assets/icons/star.svg" width="20px" />
+                </button>
+
+                <button class="btn btn-dark d-flex align-items-center gap-1 gap-xl-2" onclick="sortData(3)">
+                    <label>3</label>
+                    <img src="/assets/icons/star.svg" width="20px" />
+                </button>
+
+                <button class="btn btn-dark d-flex align-items-center gap-1 gap-xl-2" onclick="sortData(4)">
+                    <label>4</label>
+                    <img src="/assets/icons/star.svg" width="20px" />
+                </button>
+
+                <button class="btn btn-dark d-flex align-items-center gap-1 gap-xl-2" onclick="sortData(5)">
+                    <label>5</label>
+                    <img src="/assets/icons/star.svg" width="20px" />
+                </button>
+            </div>
+
+            <div id="testimoni-box" class="d-flex flex-wrap justify-content-center gap-0 gap-xl-4 px-3 px-xl-4">
+                <!-- testimoni box -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/testimonials.js"></script>
+
+</body>
+</html>
